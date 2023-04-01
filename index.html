@@ -1,33 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Logo</title>
-    <link rel="stylesheet" href="stayle2.css">
+    <title>Celendar</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.Problem-1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 20px;
+    background-color: aqua;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.problem-2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 20px;
+    background-color: aqua;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.celendar{
+    width:30%;
+    margin-top: 100px;
+    margin: 100px 400px 100px 500px ;
+    border: solid 1px black;
+    box-shadow: 4px 4px 3px gray;
+   
+}
+h1{
+    margin: 5px 30px 20px 30px;
+}
+ul{
+
+    margin: 10px 10px 10px 10px;
+    list-style-type:none;
+    display: grid;
+    grid-template-columns: repeat(7,50px);
+}
+.weekdays{
+    margin: 5px 80px 5px 5px;
+    background-color: rgb(228, 229, 231);
+}
+#start{
+    grid-column-start: 3;
+}
+
+/* TEXT ANIMATION */
+.textanimate{
+    color: gray;
+    font-size: 40px;
+    text-align: center;
+    border: solid 1px black;
+    margin: 20px 500px 50px 500px;
+    padding: 10px 0px 10px 0px;
+
+}
+
+#textdynimic{
+    margin: 0px 40px 0px 40px;
+    color: rgb(249, 243, 243);
+
+    background-color: rgb(26, 139, 26);
+    animation:textdynimic 1s linear infinite;
+
+}
+#textdynimic::before{
+    content:"LIFESTYLE" ;
+animation: textani 4s linear infinite ;
+}
+
+
+@keyframes textdynimic{
+
+0%{
+    background-color: rgb(26, 139, 26);
+}
+
+50%{
+    background-color: rgb(222, 10, 10);
+}
+
+100%{
+    background-color: rgb(10, 146, 220);
+}
+
+
+
+
+}
+@keyframes textani{
+    0%{
+    content:"LIFESTYLE" ;
+        
+    }
+
+    50%{
+    content: "WORK";
+
+    }
+
+    100%{
+        content: "EVERYTHING";
+
+    }
+
+}
+</style>
 </head>
 <body>
-     
-
-<h1>My Instagram</h1>
-
-    <div class="itme">
-        
-        <div>
-          <div class="itme2">
-            <div class="itme3">
-                <div class="itme4">
-                    <div class="itme5">
-
-                    </div>
-                </div>
-            </div>
-
-          </div>
-        </div>
+    <div class="Problem-1">
+        <div>Problem Statement-1</div>
     </div>
-    
-    </div>
+
+     <div class="celendar">
+        <h1>December 2020</h1>
+   
+    <ul class="weekdays">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+    </ul>
+    <ul>
+        <li id="start">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+</div>
+
+<div class="problem-2">
+    <div>Problem Statement-2</div>
+</div>
+<div class="textanimate">
+<div>MAKE</div>
+<div id="textdynimic"></div>
+<div>AWESOME!</div>
+</div>
 </body>
 </html>
