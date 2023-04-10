@@ -1,179 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Celendar</title>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-.Problem-1{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 20px;
-    background-color: aqua;
-    margin-left: 20%;
-    margin-right: 20%;
-
-}
-.problem-2{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 20px;
-    background-color: aqua;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.celendar{
-    width:30%;
-    margin-top: 100px;
-    margin: 100px 400px 100px 500px ;
-    border: solid 1px black;
-    box-shadow: 4px 4px 3px gray;
-   
-}
-h1{
-    margin: 5px 30px 20px 30px;
-}
-ul{
-
-    margin: 10px 10px 10px 10px;
-    list-style-type:none;
-    display: grid;
-    grid-template-columns: repeat(7,50px);
-}
-.weekdays{
-    margin: 5px 80px 5px 5px;
-    background-color: rgb(228, 229, 231);
-}
-#start{
-    grid-column-start: 3;
-}
-
-/* TEXT ANIMATION */
-.textanimate{
-    color: gray;
-    font-size: 40px;
-    text-align: center;
-    border: solid 1px black;
-    margin: 20px 500px 50px 500px;
-    padding: 10px 0px 10px 0px;
-
-}
-
-#textdynimic{
-    margin: 0px 40px 0px 40px;
-    color: rgb(249, 243, 243);
-
-    background-color: rgb(26, 139, 26);
-    animation:textdynimic 1s linear infinite;
-
-}
-#textdynimic::before{
-    content:"LIFESTYLE" ;
-animation: textani 4s linear infinite ;
-}
-
-
-@keyframes textdynimic{
-
-0%{
-    background-color: rgb(26, 139, 26);
-}
-
-50%{
-    background-color: rgb(222, 10, 10);
-}
-
-100%{
-    background-color: rgb(10, 146, 220);
-}
-
-
-
-
-}
-@keyframes textani{
-    0%{
-    content:"LIFESTYLE" ;
-        
-    }
-
-    50%{
-    content: "WORK";
-
-    }
-
-    100%{
-        content: "EVERYTHING";
-
-    }
-
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web linkedin</title>
+    <link rel="stylesheet" href="/CSS/web linkedin.css">
 </head>
 <body>
-    <div class="Problem-1">
-        <div>Problem Statement-1</div>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="logo"><img src="/Image/logo.png" ></a>
+            <div class="search-box">
+                <img src="/Image/search.png" ><input type="text" placeholder="Mr sachin" >
+            </div>
+          
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="activ-link"><img src="/Image/home.png"  ></a><span>Home</span></li>
+                <li><a href="#"><img src="/Image/network.png" ></a><span>My Network</span></li>
+                <li><a href="#"><img src="/Image/jobs.png" ></a><span>Jobs</span></li>
+                <li><a href="#"><img src="/Image/message.png" ></a><span>Massaging</span></li>
+                <li><a href="#"><img src="/Image/notification.png" ></a><span>notification</span></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+
+                <img src="/Image/Sachin.jpg" class="nav-profile" >
+
+            </div>
+            Try Oremium Free for 1 <br> Month
+        </div>
+    </nav>
+ <!-- ---------navbar end----------- -->
+
+ <div class="container">
+     <!-- ---------- left-sidebar -------- -->
+
+      <div class="left-sidebar">
+        <div class="sidebar-profle-box">
+            <img src="/Image/cover-pic3.jpg" width="100%" ">
+            <div class="sidebar-profile-info">
+                <img src="/Image/Sachin.jpg" >
+                <h1>Mr Sachin Gautam</h1>
+                <h3>Technical Trainer At skill Acadamy</h3>
+                <hr>
+               <ul>
+                    <li>Connections <span>30</span></li>
+                    <li  style="font-size: 13px; color: black;"><b>Grow Your network</b></li>
+                    <li style="margin-top: 40px; font-size: 15px; color: rgb(56, 56, 56);">Who viewed your profile<span>30</span></li>
+                    <b><hr></b>
+                </ul>  
+                 </div>
+              
+                 <div class="sidebar-profile-link">
+                    <h5>Access exlusive tools and sights</h5>
+                    <h4>Try Premium for one Month</h4>
+                 </div>
+                <div class="sidebar-profile-item">
+                    <a href="#"><img src="/Image/items.png" >My items</a>
+                </div>
+              </div>
+              <div class="sidebar-activity">
+                <h3>Recent</h3>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <h3>Groups</h3>
+                <a href="#"><img src="/image/group.png">Tensorflow</a>
+                <a href="#"><img src="/image/group.png">Tensorflow</a>
+                <h3>Followed Hashtags</h3>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+                <a href="#"><img src="/Image/hashtag.png" >Tensorflow</a>
+
+              </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- ---------- main-content ---------- -->
+      <div class="main-content">
+       <div class="main-profile">
+        <img src="/Image/Sachin.jpg" >
+        <input type="text" placeholder="Start a post">
+    </div>
+     
+        <div class="media-center">
+        <ul>
+            <li><a href="#" class="activ-link"><img src="/Image/image.png"  ><span>Photo</span></a></li>
+            <li><a href="#"><img src="/Image/youtube.png" ><span>video</span></a></li>
+            <li><a href="#"><img src="/Image/events.png" ><span>Event</span></a></li>
+            <li><a href="#"><img src="/Image/edit.png" ><span>Write-article</span></a></li>
+           </ul>
+     </div>
+      <div class="myntra-fashion">
+        <img src="/Image/logo-myntra-41471.png" class="my-logo">
+        <img src="/Image/more.png" class="three">
+        <h1 class="myntra">Myntra Fashion</h1><span class="mynta-1">792,2456 followers</span>
+        <br><img src="/Image/virat.png" class="virat">
+        </div>
+        <div class="info-name">
+        <img src="/Image/like.png" >
+        <img src="/Image/love.png" >
+        <img src="/Image/clap.png" >
+        <p> 20.comments</p>
+          </div>
+          <div class="comment">
+          <ul>
+            <li><a href="#"><img src="/Image/like.png" ><span>like</span></a></li>
+            <li><a href="#"><img src="/Image/comment.png" ><span>comment</span></a></li>
+            <li><a href="#"><img src="/Image/share.png" ><span>share</span></a></li>
+            <li><a href="#"><img src="/Image/send.png" ><span>send</span></a></li>
+           </ul>
+       
+    
+          <div class="media-yesh">
+           <img src="/Image/yesh.png" class="yesh-img" >
+           <img src="" >
+            <h1 class="yesh-info">Yesh Sharma</h1><span class="yesh-info-2">10 Million-Followers</span><br><span class="yesh-info-3">Youtube-channel</span>
+        <img src="/Image/more.png" class="three-2">
+        <p class="published"> Published new video on css property Box model.this video will vedio will run through few more properties that make up the box-model, margin, border, padding content-height & <br>width</p>
+        </div>
+        <div class="mediya-video">
+            <video src="/Image/Skill.mp4" controls></video>
+            <div class="info-name">
+                <img src="/Image/like.png" >
+                <img src="/Image/love.png" >
+                <img src="/Image/clap.png" >
+                <p> 20.comments</p>
+                  </div>
+                  <ul>
+                    <li><a href="#"><img src="/Image/like.png" ><span>like</span></a></li>
+                    <li><a href="#"><img src="/Image/comment.png" ><span>comment</span></a></li>
+                    <li><a href="#"><img src="/Image/share.png" ><span>share</span></a></li>
+                    <li><a href="#"><img src="/Image/send.png" ><span>send</span></a></li>
+                   </ul>
+        </div>
     </div>
 
-     <div class="celendar">
-        <h1>December 2020</h1>
-   
-    <ul class="weekdays">
-        <li>Sun</li>
-        <li>Mon</li>
-        <li>Tue</li>
-        <li>Wed</li>
-        <li>Thu</li>
-        <li>Fri</li>
-        <li>Sat</li>
-    </ul>
-    <ul>
-        <li id="start">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-    </ul>
-</div>
 
-<div class="problem-2">
-    <div>Problem Statement-2</div>
-</div>
-<div class="textanimate">
-<div>MAKE</div>
-<div id="textdynimic"></div>
-<div>AWESOME!</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- < --------- right-sidebar------------- > -->
+       <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="/Image/more.jpg" class="info-icon">
+            <h3>Linkedin News</h3>
+            <ul>
+                <li><a href="#">Indian crosses 3,58,974 daily cases</a><span>10h ago-5043 readers</span></li>
+                <li><a href="#">Zomato files for $1.18 IPO</a><span>13h ago-52,043 readers</span></li>
+                <li><a href="#">Jobs pay, in IT Sour </a><span>1d ago-7865 readers</span></li>
+                <li><a href="#">Google saving $ 1B a year from WFH</a><span>2d ago-7865  readers</span></li>
+            </ul>
+        </div>
+        <div class="sidebar-courses">
+            <img src="/Image/more.jpg" class="info-icon">
+            <h3>Today's most viewed courses</h3>
+            <ul>
+                <li><a href="#">Indian crosses 3,58,974 daily cases</a><span>Top news 9874 - reviews</span></li>
+                <li><a href="#">Indian crosses 3,58,974 daily cases </a><span>Top news 9879- readers</span></li>
+            </ul>
+
+
+        </div>
+        <div class="add-Your-feed">
+            <img src="/Image/more.jpg" class="info-icon">
+            <h3>Add to your feed</h3>
+            <img src="/Image/unilever.png" class="unilever">
+            <h2>Unilever</h2><span>Company-consuumer Goods</span>
+            <div class="followe">
+               <a href="#">+Follow</a>
+                <br><br><hr>
+            </div>
+            <img src="/Image/logo.png" class="linkedin">
+            <h2>Linkedin</h2><span>Company-Internet</span>
+            <div class="followe">
+                <a href="#">+Follow</a>
+                <br><br><hr>
+            </div>
+            <img src="/Image/logo-myntra-41471.png" class="linkedin">
+            <h2>Myntra</h2><span>Company-Internet</span>
+            <div class="followe">
+                <a href="#">+Follow</a>
+                <br><br><hr>
+            </div>
+    </div>
+ </div>
+
+
+
+
 </body>
 </html>
